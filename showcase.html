@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Showcase</title>
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <style>
+      .showcase {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        min-height: 100vh;
+        background: var(--color-surface);
+      }
+      .showcase__side {
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-sm);
+        height: 100vh;
+        padding: var(--space-md);
+        border-right: 1px solid var(--color-border);
+        background: var(--color-bg);
+      }
+      /* an open <select> is a native list with its own scroll */
+      .showcase__select {
+        flex: 1;
+        width: 100%;
+        padding: var(--space-xs);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-sm);
+        font: inherit;
+      }
+      .showcase__select option {
+        padding: var(--space-xs) var(--space-sm);
+        border-radius: var(--radius-sm);
+      }
+      .showcase__page {
+        font-size: var(--font-size-sm);
+      }
+      .showcase__stage {
+        min-width: 0;
+        padding: var(--space-xl);
+        overflow-x: auto;
+      }
+      /* the wrapper shows where the component ends: white sheet, shadow, dashed edge */
+      .showcase__stage > [data-include] {
+        padding: var(--space-lg);
+        background: var(--color-bg);
+        outline: 1px dashed var(--color-primary);
+        box-shadow: var(--shadow-md);
+      }
+      @media (max-width: 600px) {
+        .showcase {
+          grid-template-columns: 1fr;
+        }
+        .showcase__side {
+          position: static;
+          height: auto;
+          border-right: none;
+          border-bottom: 1px solid var(--color-border);
+        }
+        .showcase__select {
+          height: 120px;
+        }
+        .showcase__stage {
+          padding: var(--space-md);
+        }
+      }
+    </style>
+  </head>
+  <body class="showcase">
+    <aside class="showcase__side">
+      <select class="showcase__select" size="2"></select>
+      <a class="showcase__page" href="" target="_blank">open component page</a>
+    </aside>
+    <main class="showcase__stage"></main>
+
+    <script type="module">
+      import { components } from '/js/components.js';
+      import { include } from '/js/include.js';
+
+      const select = document.querySelector('.showcase__select');
+      const pageLink = document.querySelector('.showcase__page');
+      const stage = document.querySelector('.showcase__stage');
+
+      for (const name of components) {
+        select.add(new Option(name, name));
+      }
+
+      async function show(name) {
+        select.value = name;
+        pageLink.href = `/components/${name}/${name}.html`;
+        stage.innerHTML = `<div data-include="${name}"></div>`;
+        await include(stage);
+      }
+
+      function showFromHash() {
+        const name = location.hash.slice(1);
+        show(components.includes(name) ? name : components[0]);
+      }
+
+      select.addEventListener('change', () => {
+        location.hash = select.value;
+      });
+      window.addEventListener('hashchange', showFromHash);
+      showFromHash();
+    </script>
+  </body>
+</html>

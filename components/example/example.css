@@ -1,0 +1,43 @@
+/* Only classes prefixed with "example". No outer margins, no position. */
+
+.example {
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.example__image {
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: var(--space-md);
+  border-radius: var(--radius-sm);
+}
+
+.example__title {
+  margin: 0 0 var(--space-sm);
+  font-size: var(--font-size-lg);
+}
+
+.example__text {
+  margin: 0 0 var(--space-md);
+  color: var(--color-text-muted);
+}
+
+.example__toggle {
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font: inherit;
+  cursor: pointer;
+}
+
+.example__toggle:hover {
+  background: var(--color-primary-hover);
+}
+
+.example__details {
+  margin: var(--space-md) 0 0;
+}

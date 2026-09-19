@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>example</title>
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/components/example/example.css" />
+  </head>
+  <body>
+    <section class="example">
+      <img class="example__image" src="/images/example/placeholder.svg" alt="Placeholder picture" />
+      <h2 class="example__title">Example component</h2>
+      <p class="example__text">Це еталонний компонент. Дивись на його файли, коли робиш свій.</p>
+      <button class="example__toggle" type="button">Show details</button>
+      <p class="example__details" hidden>Деталі показуються після кліку.</p>
+    </section>
+
+    <script type="module">
+      import { init } from './example.js';
+      init(document);
+    </script>
+  </body>
+</html>
