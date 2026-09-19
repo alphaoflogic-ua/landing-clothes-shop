@@ -125,7 +125,7 @@ export const components = ['example', 'card'];
 ```
 git switch main
 git pull
-git switch -c 2-design-tokens
+git switch -c 4-design-tokens
 ```
 
 Назва гілки: `<номер issue>-<що робиш>`.
@@ -134,7 +134,7 @@ git switch -c 2-design-tokens
   гілка.
 - Далі 1–3 слова англійською, малими літерами, через дефіс. Для компонента —
   його імʼя з папки: `5-header`, `9-product-card`. Для іншого — коротко суть:
-  `2-design-tokens`, `3-page-skeleton`.
+  `4-design-tokens`, `5-page-skeleton`.
 - Не так: `vova`, `test`, `new`, `header-final-2`, `гілка-1`.
 
 Коли PR злитий, гілка більше не потрібна. Не продовжуй у ній наступне
@@ -142,5 +142,5 @@ git switch -c 2-design-tokens
 
 ## Завдання
 
-Завдання — в issues репозиторію. Загальний план і порядок — у issue #1.
+Завдання — в issues репозиторію. Загальний план і порядок — у issue #3.
 Бери наступне незакрите.
