@@ -105,20 +105,42 @@ export const components = ['example', 'card'];
 ## Робочий процес
 
 1. `git switch main` → `git pull`.
-2. Гілка під компонент: `git switch -c feat/card`.
-3. Скопіюй `components/example/` у `components/card/`, перейменуй файли
-   і класи. Додай `'card'` у `js/components.js`.
+2. Гілка з номером issue: `git switch -c 5-header` (див. «Гілки»).
+3. Скопіюй `components/example/` у `components/header/`, перейменуй файли
+   і класи. Додай `'header'` у `js/components.js`.
 4. Зроби компонент: розмітка → стилі → поведінка. Перевіряй на
-   `showcase.html#card` або прямо на `components/card/card.html`.
-5. Постав `<div data-include="card">` на лендинг.
+   `showcase.html#header` або прямо на `components/header/header.html`.
+5. Постав `<div data-include="header">` на сторінку.
 6. Коміти невеликі, повідомлення англійською, з дієслова:
-   `Add card markup`, `Style card`, `Add card button handler`.
-7. `git push -u origin feat/card` → Pull Request. У описі — посилання
-   `showcase.html#card`, чеклист відмічений.
+   `Add header markup`, `Style header`, `Add header menu toggle`.
+7. `git push -u origin 5-header` → Pull Request. У описі — `Closes #5`,
+   посилання `showcase.html#header`, чеклист відмічений.
 8. Виправлення після ревʼю — у ту саму гілку. Потім merge.
 
-Одна гілка = один компонент = один pull request.
+### Гілки
+
+Одна гілка = одне issue = один pull request. Гілка створюється від свіжого
+`main`:
+
+```
+git switch main
+git pull
+git switch -c 2-design-tokens
+```
+
+Назва гілки: `<номер issue>-<що робиш>`.
+
+- Номер — той, що в issue на GitHub. Так одразу видно, до якого завдання
+  гілка.
+- Далі 1–3 слова англійською, малими літерами, через дефіс. Для компонента —
+  його імʼя з папки: `5-header`, `9-product-card`. Для іншого — коротко суть:
+  `2-design-tokens`, `3-page-skeleton`.
+- Не так: `vova`, `test`, `new`, `header-final-2`, `гілка-1`.
+
+Коли PR злитий, гілка більше не потрібна. Не продовжуй у ній наступне
+завдання — нова задача, нова гілка від `main`.
 
 ## Завдання
 
-<!-- Тут ментор додає завдання по черзі. -->
+Завдання — в issues репозиторію. Загальний план і порядок — у issue #1.
+Бери наступне незакрите.
