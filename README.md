@@ -11,12 +11,7 @@
 1. Встанови VS Code, Git, Chrome.
 2. Відкрий папку репозиторію у VS Code і погодься встановити рекомендовані
    розширення: **Live Server**, **Prettier**, **EditorConfig**.
-3. У терміналі:
-   ```
-   git config --global core.autocrlf true
-   git config --global user.name "Ім'я Прізвище"
-   git config --global user.email "you@example.com"
-   ```
+3.**видалено**
 4. Натисни **Go Live** справа внизу у VS Code. Відкриється
    `http://127.0.0.1:5500/` — лендинг. Вітрина компонентів —
    `http://127.0.0.1:5500/showcase.html`.
