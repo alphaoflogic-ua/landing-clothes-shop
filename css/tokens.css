@@ -1,55 +1,43 @@
-/* Design tokens: the only stylesheet linked from <head>.
-   Components use these variables and never hardcode colors, spacing, or fonts.
-
-   Значення порожні — заповни їх із макета. Поки змінна порожня,
-   усе, що її використовує, виглядає зламаним. Це нормально. */
-
-/* шрифти підключаються тут, через @import (Google Fonts або Fontshare) */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;700&display=swap');
 
 :root {
-  /* colors */
-  --color-bg: ; /* фон сторінки: клацни по назві фрейму «Homepage» над макетом — колір у секції Fill справа */
-  --color-hero: ; /* фон першого блоку на Homepage — з великим заголовком і фото */
-  --color-surface: ; /* фон футера і блоку «Browse by dress style» */
-  --color-product-bg: ; /* підложка під фото товару в картці — клацни по картці, потім Shift+Enter, щоб вибрати рамку, а не фото */
-  --color-text: ; /* основний текст, кнопки */
-  --color-text-muted: ; /* опис під великим заголовком на Homepage, ціна без скидки, «Posted on» у відгуках.
-                           У Figma це чорний з прозорістю — запиши як rgba(0, 0, 0, 0.6) */
-  --color-border: ; /* рамка картки відгуку, лінія над футером — теж із прозорістю */
-  --color-discount: ; /* текст «-20%» у картці товару */
-  --color-discount-bg: ; /* фон бейджа «-20%» */
-  --color-rating: ; /* зірочки */
-  --color-verified: ; /* зелена галочка біля імені у відгуках */
-  --color-on-dark: ; /* текст на чорному: кнопки, блок «Stay up to date» */
+  --color-bg: #ffffff;
+  --color-hero: #f2f0f1;
+  --color-surface: #f0f0f0;
+  --color-product-bg: #f0eeed;
+  --color-text: #000000;
+  --color-text-muted: #00000099;
 
-  /* typography */
-  --font-heading: ; /* заголовки: «FIND CLOTHES…», «NEW ARRIVALS» */
-  --font-body: ; /* увесь інший текст */
-  --font-size-display: ; /* великий заголовок «FIND CLOTHES…» на Homepage */
-  --font-size-title: ; /* заголовки секцій: «NEW ARRIVALS», «YOUR CART» */
-  --font-size-subtitle: ; /* назва товару на сторінці товару, «Order Summary» */
-  --font-size-body: ; /* основний текст */
-  --font-size-caption: ; /* «Posted on…», дрібний текст у футері */
-  --line-height: ;
+  --color-border: #0000001a;
+  --color-discount: #ff3333;
+  --color-discount-bg: #ff33331a;
+  --color-rating: #ffc633;
+  --color-verified: #01ab31;
+  --color-on-dark: #ffffff;
 
-  /* spacing */
-  --space-xs: ; /* між зірочками і числом рейтингу */
-  --space-sm: ; /* між назвою товару і рейтингом у картці */
-  --space-md: ; /* між картками в сітці */
-  --space-lg: ; /* внутрішній відступ картки відгуку */
-  --space-xl: ; /* між секціями на Homepage */
-  --page-padding: ; /* відступ від краю екрана до контенту — клацни по блоку «Browse by dress style» на Homepage, його X */
+  --font-heading: 'Archivo Black', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-size-display: 64px;
+  --font-size-title: 48px;
+  --font-size-subtitle: 40px;
+  --font-size-body: 16px;
+  --font-size-caption: 14px;
+  --line-height: 1.375;
 
-  /* shape */
-  --radius-sm: ; /* поле пошуку в шапці, поле email */
-  --radius-md: ; /* картка відгуку, фото товару */
-  --radius-pill: ; /* кнопки «Shop Now», «Add to Cart» */
+  --space-xs: 13px;
+  --space-sm: 8px;
+  --space-md: 20px;
+  --space-lg: 32px;
+  --space-xl: 80px;
+  --page-padding: 100px;
 
-  /* layout */
-  --container-width: ; /* ширина W того самого блоку «Browse by dress style» */
+  --radius-sm: 62px;
+  --radius-md: 20px;
+  --radius-pill: 62px;
+
+  --container-width: 1240px;
 }
 
-/* minimal base: box model and body defaults */
 *,
 *::before,
 *::after {
@@ -70,7 +58,6 @@ img {
   display: block;
 }
 
-/* a placeholder is invisible until include.js fills it, so the page does not jump */
 [data-include]:empty {
   visibility: hidden;
 }
