@@ -1,58 +1,43 @@
-/* Design tokens: the only stylesheet linked from <head>.
-   Components use these variables and never hardcode colors, spacing, or fonts.
-
-   Значення порожні — заповни їх із макета. Поки змінна порожня,
-   усе, що її використовує, виглядає зламаним. Це нормально. */
-
-/* шрифти підключаються тут, через @import (Google Fonts або Fontshare) */
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;700&display=swap');
 
 :root {
-  /* colors */
-  --color-bg: #ffffff; /* фон сторінки: клацни по назві фрейму «Homepage» над макетом — колір у секції Fill справа */
-  --color-hero: #f2f0f1; /* фон першого блоку на Homepage — з великим заголовком і фото */
-  --color-surface: #f0f0f0; /* фон футера і блоку «Browse by dress style» */
-  --color-product-bg: #f0eeed; /* підложка під фото товару в картці — клацни по картці, потім Shift+Enter, щоб вибрати рамку, а не фото */
-  --color-text: #000000; /* основний текст, кнопки */
-  --color-text-muted: #00000099; /* опис під великим заголовком на Homepage, ціна без скидки, «Posted on» у відгуках.
-                           У Figma це чорний з прозорістю — запиши як rgba(0, 0, 0, 0.6) */
-  --color-border: #0000001a; /* рамка картки відгуку, лінія над футером — теж із прозорістю */
-  --color-discount: #ff3333; /* текст «-20%» у картці товару */
-  --color-discount-bg: #ff33331a; /* фон бейджа «-20%» */
-  --color-rating: #ffc633; /* зірочки */
-  --color-verified: #01ab31; /* зелена галочка біля імені у відгуках */
-  --color-on-dark: #ffffff; /* текст на чорному: кнопки, блок «Stay up to date» */
+  --color-bg: #ffffff;
+  --color-hero: #f2f0f1;
+  --color-surface: #f0f0f0;
+  --color-product-bg: #f0eeed;
+  --color-text: #000000;
+  --color-text-muted: #00000099;
 
-  /* typography */
-  --font-heading:
-    'Archivo Black', sans-serif; /* заголовки: «FIND CLOTHES…», «NEW ARRIVALS»   ----font: Archivo Black---- */
-  --font-body: 'Inter', sans-serif; /* увесь інший текст */
-  --font-size-display: 64px; /* великий заголовок «FIND CLOTHES…» на Homepage */
-  --font-size-title: 48px; /* заголовки секцій: «NEW ARRIVALS», «YOUR CART» */
-  --font-size-subtitle: 40px; /* назва товару на сторінці товару, «Order Summary» */
-  --font-size-body: 16px; /* основний текст */
-  --font-size-caption: 16px; /* «Posted on…», дрібний текст у футері */
+  --color-border: #0000001a;
+  --color-discount: #ff3333;
+  --color-discount-bg: #ff33331a;
+  --color-rating: #ffc633;
+  --color-verified: #01ab31;
+  --color-on-dark: #ffffff;
+
+  --font-heading: 'Archivo Black', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-size-display: 64px;
+  --font-size-title: 48px;
+  --font-size-subtitle: 40px;
+  --font-size-body: 16px;
+  --font-size-caption: 14px;
   --line-height: 1.375;
 
-  /* spacing */
-  --space-xs: 13px; /* між зірочками і числом рейтингу */
-  --space-sm: 8px; /* між назвою товару і рейтингом у картці */
-  --space-md: 20px; /* між картками в сітці */
-  --space-lg: 65px; /* внутрішній відступ картки відгуку */
-  --space-xl: 128px; /* між секціями на Homepage */
-  --page-padding: 100px; /* відступ від краю екрана до контенту — клацни по блоку «Browse by dress style» на Homepage, його X */
+  --space-xs: 13px;
+  --space-sm: 8px;
+  --space-md: 20px;
+  --space-lg: 32px;
+  --space-xl: 80px;
+  --page-padding: 100px;
 
-  /* shape */
-  --radius-sm: 62px; /* поле пошуку в шапці, поле email */
-  --radius-md: 20px; /* картка відгуку, фото товару */
-  --radius-pill: 62px; /* кнопки «Shop Now», «Add to Cart» */
+  --radius-sm: 62px;
+  --radius-md: 20px;
+  --radius-pill: 62px;
 
-  /* layout */
-  --container-width: 1239px; /* ширина W того самого блоку «Browse by dress style» */
+  --container-width: 1240px;
 }
 
-/* minimal base: box model and body defaults */
 *,
 *::before,
 *::after {
@@ -73,7 +58,6 @@ img {
   display: block;
 }
 
-/* a placeholder is invisible until include.js fills it, so the page does not jump */
 [data-include]:empty {
   visibility: hidden;
 }
