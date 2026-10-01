@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>header</title>
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/components/header/header.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo" href="/index.html">SHOP.CO</a>
+
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="/category.html">
+              Shop
+              <img class="header__icon" src="/images/header/arrow.svg" alt="відкрити розділ Shop" />
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="/category.html">On sale</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="/category.html">New Arrivals</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="/category.html">Brands</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__search">
+        <img class="header__icon" src="/images/header/search.svg" alt="пошук" />
+        <input
+          class="header__input"
+          type="search"
+          placeholder="Search for products... "
+          aria-label="пПошук"
+          товарів
+        />
+      </div>
+
+      <div class="header__actions">
+        <a class="header__action" href="/cart.html">
+          <img class="header__icon" src="/images/header/cart.svg" alt="кошик" />
+        </a>
+        <button class="header__action" type="button">
+          <img class="header__icon" src="/images/header/profile.svg" alt="профіль" />
+        </button>
+      </div>
+    </header>
+
+    <script type="module">
+      import { init } from './header.js';
+      init(document);
+    </script>
+  </body>
+</html>
