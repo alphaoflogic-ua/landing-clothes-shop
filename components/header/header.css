@@ -21,6 +21,7 @@
 }
 
 .header__search {
+  background: none;
   display: flex;
   align-items: center;
   flex: 1;
@@ -45,14 +46,20 @@
   text-decoration: none;
   color: var(--color-text);
   font-family: var(--font-heading);
+  font-size: var(--font-size-logo);
 }
 
 .header__input {
   flex: 1;
   border: none;
+  background: none;
 }
 
 .header__icon {
   width: var(--icon-size);
   height: var(--icon-size);
+}
+
+.header__input::placeholder {
+  color: var(--color-text-muted);
 }
