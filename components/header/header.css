@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   gap: var(--space-lg);
+  padding-block: 24px;
 }
 
 .header__list {
@@ -62,4 +63,8 @@
 
 .header__input::placeholder {
   color: var(--color-text-muted);
+}
+
+.header__chevron {
+  font-size: var(--icon-size-sm);
 }
