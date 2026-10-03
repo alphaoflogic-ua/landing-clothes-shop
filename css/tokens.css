@@ -36,6 +36,10 @@
   --radius-pill: 62px;
 
   --container-width: 1240px;
+
+  --icon-size: 24px;
+  --icon-size-sm: 16px;
+  --font-size-logo: 32px;
 }
 
 *,
