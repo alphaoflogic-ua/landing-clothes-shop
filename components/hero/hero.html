@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>hero</title>
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/css/page.css" />
+    <link rel="stylesheet" href="/components/hero/hero.css" />
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero__visual">
+        <img
+          class="hero__photo"
+          src="/images/hero/photo.jpg"
+          alt="Man and woman in stylish jackets and glasses"
+        />
+        <img class="hero__star hero__star--big" src="/images/hero/star.svg" alt="" />
+        <img class="hero__star hero__star--small" src="/images/hero/star.svg" alt="" />
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1 class="hero__title">Find clothes that matches your style</h1>
+          <p class="hero__text">
+            Browse through our diverse range of meticulously crafted garments, designed to bring out
+            your individuality and cater to your sense of style.
+          </p>
+          <a class="hero__button" href="/category.html">Shop Now</a>
+          <ul class="hero__stats">
+            <li class="hero__stat">
+              <span class="hero__stat-number">200+</span>
+              <span class="hero__stat-label">International Brands</span>
+            </li>
+            <li class="hero__stat">
+              <span class="hero__stat-number">2,000+</span>
+              <span class="hero__stat-label">High-Quality Products</span>
+            </li>
+            <li class="hero__stat">
+              <span class="hero__stat-number">30,000+</span>
+              <span class="hero__stat-label">Happy Customers</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script type="module">
+      import { init } from './hero.js';
+      init(document);
+    </script>
+  </body>
+</html>
