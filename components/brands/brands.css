@@ -1,0 +1,17 @@
+.brands {
+  padding: var(--space-lg) 0;
+  background: var(--color-dark);
+}
+
+.brands__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.brands__item {
+  display: flex;
+  align-items: center;
+}

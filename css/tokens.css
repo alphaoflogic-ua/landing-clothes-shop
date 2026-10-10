@@ -7,6 +7,7 @@
   --color-product-bg: #f0eeed;
   --color-text: #000000;
   --color-text-muted: #00000099;
+  --color-dark: #000000;
 
   --color-border: #0000001a;
   --color-discount: #ff3333;
@@ -38,8 +39,16 @@
   --container-width: 1240px;
 
   --icon-size: 24px;
+  --icon-size-md: 20px;
   --icon-size-sm: 16px;
   --font-size-logo: 32px;
+
+  --hero-visual-width: 1440px;
+  --hero-content-width: 760px;
+  --star-size-lg: 100px;
+  --star-size-sm: 54px;
+
+  --hero-content-width: 640px;
 }
 
 *,

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>brands</title>
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/css/page.css" />
+    <link rel="stylesheet" href="/components/brands/brands.css" />
+  </head>
+  <body>
+    <section class="brands">
+      <ul class="container brands__list">
+        <li class="brands__item">
+          <img class="brands__logo" src="/images/brands/versace.svg" alt="Versace" />
+        </li>
+        <li class="brands__item">
+          <img class="brands__logo" src="/images/brands/zara.svg" alt="Zara" />
+        </li>
+        <li class="brands__item">
+          <img class="brands__logo" src="/images/brands/gucci.svg" alt="Gucci" />
+        </li>
+        <li class="brands__item">
+          <img class="brands__logo" src="/images/brands/prada.svg" alt="Prada" />
+        </li>
+        <li class="brands__item">
+          <img class="brands__logo" src="/images/brands/calvin-klein.svg" alt="Calvin Klein" />
+        </li>
+      </ul>
+    </section>
+
+    <script type="module">
+      import { init } from './brands.js';
+      init(document);
+    </script>
+  </body>
+</html>
