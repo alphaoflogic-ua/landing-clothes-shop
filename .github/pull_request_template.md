@@ -9,7 +9,6 @@
 ## Checklist
 
 - [ ] The component is listed in `js/components.js` and shows up in the showcase
-- [ ] Works at 360px and on desktop
 - [ ] No errors in the browser console
 - [ ] Classes are prefixed with the component name (`card__title`, `card--wide`)
 - [ ] The component sets no outer margins and no position of its own
