@@ -61,4 +61,7 @@ export function include(container) {
   return Promise.all(placeholders.map(fillPlaceholder));
 }
 
-await include(document);
+// Not awaited on purpose. A top-level await keeps this module in the "evaluating"
+// state until the whole page is assembled, so a component that imports include()
+// to insert markup of its own would wait for a module that is waiting for it.
+include(document);
