@@ -1,4 +1,9 @@
 .hero {
+  --hero-visual-width: 1440px;
+  --hero-content-width: 640px;
+  --star-size-lg: 100px;
+  --star-size-sm: 54px;
+
   display: grid;
   background: var(--color-hero);
 }
@@ -66,7 +71,7 @@
   display: inline-block;
   padding: var(--space-xs) var(--space-xl);
   border-radius: var(--radius-pill);
-  background: var(--color-dark);
+  background: var(--color-bg-dark);
   color: var(--color-on-dark);
   text-decoration: none;
 }
