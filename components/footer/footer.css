@@ -1,0 +1,72 @@
+/* Only classes prefixed with "footer". No outer margins, no position. */
+
+.footer {
+  padding: calc(var(--space-xl) + var(--newsletter-overlap)) 0 var(--space-lg);
+  background: var(--color-surface);
+}
+
+.footer__top {
+  display: flex;
+  gap: var(--space-xl);
+}
+
+.footer__brand {
+  flex: 1;
+}
+
+.footer__logo {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-logo);
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.footer__description {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-caption);
+}
+
+.footer__socials,
+.footer__payments,
+.footer__list {
+  display: flex;
+  gap: var(--space-md);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__heading {
+  margin: 0 0 var(--space-md);
+  font-size: var(--font-size-body);
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+}
+
+.footer__list {
+  flex-direction: column;
+}
+
+.footer__link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.footer__line {
+  margin: var(--space-xl) 0 var(--space-md);
+  border: none;
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-caption);
+}

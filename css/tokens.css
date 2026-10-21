@@ -30,6 +30,7 @@
   --space-md: 20px;
   --space-lg: 32px;
   --space-xl: 80px;
+  --space-2xl: 64px;
   --page-padding: 100px;
 
   --radius-sm: 62px;
@@ -42,6 +43,13 @@
   --icon-size-sm: 16px;
   --icon-size-md: 20px;
   --font-size-logo: 32px;
+
+  --form-width: 349px;
+
+  --letter-spacing-wide: 0.15em;
+  --border-width: 1px;
+
+  --newsletter-overlap: 90px;
 }
 
 *,

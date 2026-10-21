@@ -1,0 +1,56 @@
+/* Only classes prefixed with "newsletter". No outer margins, no position. */
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-lg) var(--space-2xl);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-dark);
+}
+
+.newsletter__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: var(--font-size-subtitle);
+  color: var(--color-on-dark);
+}
+
+.newsletter__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  width: var(--form-width);
+  flex-shrink: 0;
+}
+
+.newsletter__input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.newsletter__button {
+  padding: var(--space-xs) var(--space-md);
+  border: none;
+  border-radius: var(--radius-pill);
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  cursor: pointer;
+}
+
+.newsletter__button:hover {
+  opacity: 0.85;
+}
+
+.newsletter__input {
+  padding: var(--space-xs) var(--space-md);
+  padding-left: calc(var(--space-md) + var(--icon-size) + var(--space-sm));
+  border: none;
+  border-radius: var(--radius-pill);
+  background: var(--color-bg) url('/images/newsletter/mail.svg') no-repeat var(--space-md) center /
+    var(--icon-size);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+}

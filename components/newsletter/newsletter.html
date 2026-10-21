@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>newsletter</title>
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/components/newsletter/newsletter.css" />
+  </head>
+  <body>
+    <section class="newsletter">
+      <h2 class="newsletter__title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+
+      <form class="newsletter__form">
+        <input
+          class="newsletter__input"
+          type="email"
+          name="email"
+          placeholder="Enter your email address"
+          aria-label="Email address"
+        />
+        <button class="newsletter__button" type="submit">Subscribe to Newsletter</button>
+      </form>
+    </section>
+
+    <script type="module">
+      import { init } from './newsletter.js';
+      init(document);
+    </script>
+  </body>
+</html>
