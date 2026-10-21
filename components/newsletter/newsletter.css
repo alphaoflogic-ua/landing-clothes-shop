@@ -24,16 +24,6 @@
   flex-shrink: 0;
 }
 
-.newsletter__input {
-  padding: var(--space-xs) var(--space-md);
-  border: none;
-  border-radius: var(--radius-pill);
-  background: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-body);
-  font-size: var(--font-size-body);
-}
-
 .newsletter__input::placeholder {
   color: var(--color-text-muted);
 }
