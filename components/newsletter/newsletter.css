@@ -52,3 +52,15 @@
 .newsletter__button:hover {
   opacity: 0.85;
 }
+
+.newsletter__input {
+  padding: var(--space-xs) var(--space-md);
+  padding-left: calc(var(--space-md) + var(--icon-size) + var(--space-sm));
+  border: none;
+  border-radius: var(--radius-pill);
+  background: var(--color-bg) url('/images/newsletter/mail.svg') no-repeat var(--space-md) center /
+    var(--icon-size);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+}
