@@ -7,6 +7,7 @@
   --color-product-bg: #f0eeed;
   --color-text: #000000;
   --color-text-muted: #00000099;
+  --color-bg-dark: #000000;
 
   --color-border: #0000001a;
   --color-discount: #ff3333;
@@ -29,6 +30,7 @@
   --space-md: 20px;
   --space-lg: 32px;
   --space-xl: 80px;
+  --space-2xl: 64px;
   --page-padding: 100px;
 
   --radius-sm: 62px;
@@ -37,9 +39,11 @@
 
   --container-width: 1240px;
 
-  --icon-size: 24px;
+  --icon-size: 40px;
   --icon-size-sm: 16px;
   --font-size-logo: 32px;
+
+  --form-width: 349px;
 }
 
 *,
