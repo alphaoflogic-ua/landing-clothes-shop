@@ -1,0 +1,42 @@
+.promo-bar[hidden] {
+  display: none;
+}
+
+.promo-bar {
+  padding: var(--space-sm) 0;
+  background: var(--color-bg-dark);
+  color: var(--color-on-dark);
+}
+
+.promo-bar__inner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-bar__text {
+  margin: 0;
+  font-size: var(--font-size-caption);
+}
+
+.promo-bar__link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.promo-bar__close {
+  cursor: pointer;
+  position: absolute;
+  right: var(--page-padding);
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+.promo-bar__icon {
+  width: var(--icon-size-md);
+  height: var(--icon-size-md);
+}
