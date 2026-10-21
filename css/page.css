@@ -3,3 +3,8 @@
   margin: 0 auto;
   padding: 0 var(--page-padding);
 }
+
+.page__newsletter {
+  position: relative;
+  margin-bottom: calc(var(--newsletter-overlap) * -1);
+}
