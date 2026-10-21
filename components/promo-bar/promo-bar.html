@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>promo-bar</title>
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/components/promo-bar/promo-bar.css" />
+  </head>
+  <body>
+    <div class="promo-bar">
+      <div class="container promo-bar__inner">
+        <p class="promo-bar__text">
+          Sign up and get 20% off to your first order.
+          <a class="promo-bar__link" href="#">Sign Up Now</a>
+        </p>
+        <button class="promo-bar__close" type="button" aria-label="Close">
+          <img class="promo-bar__icon" src="/images/promo-bar/close.svg" alt="" />
+        </button>
+      </div>
+    </div>
+
+    <script type="module">
+      import { init } from './promo-bar.js';
+      init(document);
+    </script>
+  </body>
+</html>

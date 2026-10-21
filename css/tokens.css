@@ -7,6 +7,7 @@
   --color-product-bg: #f0eeed;
   --color-text: #000000;
   --color-text-muted: #00000099;
+  --color-bg-dark: #000000;
 
   --color-border: #0000001a;
   --color-discount: #ff3333;
@@ -39,6 +40,7 @@
 
   --icon-size: 24px;
   --icon-size-sm: 16px;
+  --icon-size-md: 20px;
   --font-size-logo: 32px;
 }
 
