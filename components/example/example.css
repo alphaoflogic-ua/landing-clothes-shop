@@ -30,7 +30,7 @@
   border: none;
   border-radius: var(--radius-pill);
   background: var(--color-text);
-  color: var(--color-bg-dark);
+  color: var(--color-on-dark);
   font: inherit;
   cursor: pointer;
 }
