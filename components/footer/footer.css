@@ -1,44 +1,77 @@
-/* Only classes prefixed with "example". No outer margins, no position. */
+/* Only classes prefixed with "footer". No outer margins, no position. */
 
-.example {
-  padding: var(--space-lg);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+.footer {
+  padding: var(--space-xl) 0 var(--space-lg);
   background: var(--color-surface);
 }
 
-.example__image {
-  width: 100%;
-  max-width: 320px;
-  margin-bottom: var(--space-md);
-  border-radius: var(--radius-sm);
+.footer__top {
+  display: flex;
+  gap: var(--space-xl);
 }
 
-.example__title {
-  margin: 0 0 var(--space-sm);
+.footer__brand {
+  flex: 1;
+}
+
+.footer__logo {
   font-family: var(--font-heading);
-  font-size: var(--font-size-subtitle);
+  font-size: var(--font-size-logo);
+  color: var(--color-text);
+  text-decoration: none;
 }
 
-.example__text {
-  margin: 0 0 var(--space-md);
+.footer__description {
   color: var(--color-text-muted);
+  font-size: var(--font-size-caption);
 }
 
-.example__toggle {
-  padding: var(--space-sm) var(--space-md);
+.footer__socials,
+.footer__payments,
+.footer__list {
+  display: flex;
+  gap: var(--space-md);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__list {
+  flex-direction: column;
+}
+
+.footer__heading {
+  margin: 0 0 var(--space-md);
+  text-transform: uppercase;
+}
+
+.footer__link {
+  color: var(--color-text-muted);
+  text-decoration: none;
+}
+
+.footer__line {
+  margin: var(--space-xl) 0 var(--space-md);
   border: none;
-  border-radius: var(--radius-pill);
-  background: var(--color-text);
-  color: var(--color-on-dark);
-  font: inherit;
-  cursor: pointer;
+  border-top: 1px solid var(--color-border);
 }
 
-.example__toggle:hover {
-  opacity: 0.85;
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.example__details {
-  margin: var(--space-md) 0 0;
+.footer__copyright {
+  margin: 0;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-caption);
+}
+
+.footer__heading {
+  margin: 0 0 var(--space-md);
+  font-size: var(--font-size-body);
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
 }
