@@ -50,6 +50,9 @@
   --border-width: 1px;
 
   --newsletter-overlap: 90px;
+
+  --font-size-product-title: 20px;
+  --font-size-price: 24px;
 }
 
 *,
