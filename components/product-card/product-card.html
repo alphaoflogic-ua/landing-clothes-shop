@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>product-card</title>
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/components/product-card/product-card.css" />
+  </head>
+  <body>
+    <a class="product-card" href="/product.html">
+      <img
+        class="product-card__image"
+        src="/images/product-card/jeans.png"
+        alt="Skinny Fit Jeans"
+      />
+      <h3 class="product-card__title">Skinny Fit Jeans</h3>
+      <div class="product-card__rating">
+        <span class="product-card__stars"></span>
+        <span class="product-card__rating-value">3.5/5</span>
+      </div>
+      <div class="product-card__prices">
+        <span class="product-card__price">$240</span>
+        <del class="product-card__old-price">$260</del>
+        <span class="product-card__discount">-20%</span>
+      </div>
+    </a>
+
+    <script type="module">
+      import { init } from './product-card.js';
+      init(document);
+    </script>
+  </body>
+</html>

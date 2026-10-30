@@ -8,4 +8,5 @@ export const components = [
   'promo-bar',
   'hero',
   'brands',
+  'product-card',
 ];

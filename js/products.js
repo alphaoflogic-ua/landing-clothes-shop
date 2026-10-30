@@ -1,4 +1,4 @@
-const products = [
+export const products = [
   {
     title: 'T-shirt with Tape Details',
     photo: '/images/product-card/tshirt-tape.png',
