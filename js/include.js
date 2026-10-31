@@ -17,12 +17,17 @@ function loadStyle(href) {
   if (loadedStyles.has(href)) return Promise.resolve();
   loadedStyles.add(href);
 
-  return new Promise((resolve, reject) => {
+  return new Promise((resolve) => {
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = href;
     link.onload = resolve;
-    link.onerror = () => reject(new Error(`Cannot load ${href}`));
+    // A component is allowed to have no stylesheet of its own, so a missing
+    // file is not a failure: drop the dead link and carry on.
+    link.onerror = () => {
+      link.remove();
+      resolve();
+    };
     document.head.append(link);
   });
 }
