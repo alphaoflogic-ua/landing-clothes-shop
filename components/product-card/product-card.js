@@ -13,7 +13,8 @@ export function init(container) {
 
   container.querySelector('.product-card__title').textContent = title;
   container.querySelector('.product-card__price').textContent = `$${price}`;
-  container.querySelector('.product-card__rating-value').textContent = `${rating}/5`;
+  container.querySelector('.product-card__rating-value').textContent =
+    `${Number(rating).toFixed(1)}/5`;
   container.querySelector('.product-card__stars').style.setProperty('--rating', rating);
 
   const oldPriceElement = container.querySelector('.product-card__old-price');

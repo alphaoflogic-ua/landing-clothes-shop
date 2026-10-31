@@ -3,7 +3,7 @@ export const products = [
     title: 'T-shirt with Tape Details',
     photo: '/images/product-card/tshirt-tape.png',
     price: 120,
-    rating: 4,
+    rating: 4.5,
     group: 'new',
   },
   {
