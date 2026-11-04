@@ -1,0 +1,73 @@
+@theme {
+  --color-bg: #ffffff;
+  --color-hero: #f2f0f1;
+  --color-surface: #f0f0f0;
+  --color-product-bg: #f0eeed;
+  --color-text: #000000;
+  --color-text-muted: #00000099;
+  --color-bg-dark: #000000;
+  --color-border: #0000001a;
+  --color-discount: #ff3333;
+  --color-discount-bg: #ff33331a;
+  --color-rating: #ffc633;
+  --color-verified: #01ab31;
+  --color-on-dark: #ffffff;
+
+  --font-heading: 'Archivo Black', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --text-display: 64px;
+  --text-title: 48px;
+  --text-subtitle: 40px;
+  --text-body: 16px;
+  --text-caption: 14px;
+  --text-logo: 32px;
+  --text-product-title: 20px;
+  --text-price: 24px;
+
+  --leading-normal: 1.375;
+  --tracking-wide: 0.15em;
+
+  --spacing-xs: 13px;
+  --spacing-sm: 8px;
+  --spacing-md: 20px;
+  --spacing-lg: 32px;
+  --spacing-xl: 80px;
+  --spacing-2xl: 64px;
+  --spacing-gutter: 100px;
+  --spacing-icon: 24px;
+  --spacing-icon-sm: 16px;
+  --spacing-icon-md: 20px;
+  --spacing-form: 349px;
+  --spacing-newsletter-overlap: 90px;
+
+  --radius-sm: 62px;
+  --radius-md: 20px;
+  --radius-pill: 62px;
+
+  --container-page: 1240px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--leading-normal);
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+[data-include]:empty {
+  visibility: hidden;
+}
