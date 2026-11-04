@@ -9,4 +9,5 @@ export const components = [
   'hero',
   'brands',
   'product-card',
+  'product-list',
 ];

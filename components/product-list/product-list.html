@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>product-list</title>
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/components/product-list/product-list.css" />
+  </head>
+  <body>
+    <section class="product-list">
+      <h2 class="product-list__heading">New Arrivals</h2>
+      <div class="product-list__grid">
+        <div
+          data-include="product-card"
+          data-title="T-shirt with Tape Details"
+          data-photo="/images/product-card/tshirt-tape.png"
+          data-price="120"
+          data-rating="4"
+        ></div>
+        <div
+          data-include="product-card"
+          data-title="Skinny Fit Jeans"
+          data-photo="/images/product-card/jeans.png"
+          data-price="240"
+          data-rating="3.5"
+          data-old-price="260"
+          data-discount="20"
+        ></div>
+        <div
+          data-include="product-card"
+          data-title="Checkered Shirt"
+          data-photo="/images/product-card/checkered-shirt.png"
+          data-price="180"
+          data-rating="4.5"
+        ></div>
+        <div
+          data-include="product-card"
+          data-title="Sleeve Striped T-shirt"
+          data-photo="/images/product-card/sleeve-striped-tshirt.png"
+          data-price="130"
+          data-rating="4.5"
+          data-old-price="160"
+          data-discount="30"
+        ></div>
+      </div>
+      <a class="product-list__link" href="/category.html">View All</a>
+    </section>
+
+    <script type="module">
+      import '/js/include.js';
+      import { init } from './product-list.js';
+      init(document);
+    </script>
+  </body>
+</html>
