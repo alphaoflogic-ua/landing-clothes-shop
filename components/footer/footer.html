@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>footer</title>
     <link rel="stylesheet" href="/css/tokens.css" />
-    <link rel="stylesheet" href="/components/footer/footer.css" />
+    <script type="module" src="/js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <footer class="footer">
+    <footer
+      class="footer pt-[calc(var(--spacing-xl)+var(--spacing-newsletter-overlap))] pb-lg bg-surface"
+    >
       <div class="container">
-        <div class="footer__top">
-          <div class="footer__brand">
-            <a class="footer__logo" href="/">SHOP.CO</a>
-            <p class="footer__description">
+        <div class="footer__top flex gap-xl">
+          <div class="footer__brand flex-1">
+            <a class="footer__logo font-heading text-logo text-text" href="/">SHOP.CO</a>
+            <p class="footer__description text-text-muted text-caption">
               We have clothes that suits your style and which you’re proud to wear. From women to
               men.
             </p>
-            <ul class="footer__socials">
+            <ul class="footer__socials flex gap-md">
               <li>
                 <a class="footer__social" href="#" aria-label="Twitter">
                   <img src="/images/footer/twitter.svg" alt="" />
@@ -42,51 +45,59 @@
           </div>
 
           <div class="footer__column">
-            <h3 class="footer__heading">Company</h3>
-            <ul class="footer__list">
-              <li><a class="footer__link" href="#">About</a></li>
-              <li><a class="footer__link" href="#">Features</a></li>
-              <li><a class="footer__link" href="#">Works</a></li>
-              <li><a class="footer__link" href="#">Career</a></li>
+            <h3 class="footer__heading mb-md text-body font-medium tracking-wide uppercase">
+              Company
+            </h3>
+            <ul class="footer__list flex flex-col gap-md">
+              <li><a class="footer__link text-text-muted" href="#">About</a></li>
+              <li><a class="footer__link text-text-muted" href="#">Features</a></li>
+              <li><a class="footer__link text-text-muted" href="#">Works</a></li>
+              <li><a class="footer__link text-text-muted" href="#">Career</a></li>
             </ul>
           </div>
 
           <div class="footer__column">
-            <h3 class="footer__heading">Help</h3>
-            <ul class="footer__list">
-              <li><a class="footer__link" href="#">Customer Support</a></li>
-              <li><a class="footer__link" href="#">Delivery Details</a></li>
-              <li><a class="footer__link" href="#">Terms &amp; Conditions</a></li>
-              <li><a class="footer__link" href="#">Privacy Policy</a></li>
+            <h3 class="footer__heading mb-md text-body font-medium tracking-wide uppercase">
+              Help
+            </h3>
+            <ul class="footer__list flex flex-col gap-md">
+              <li><a class="footer__link text-text-muted" href="#">Customer Support</a></li>
+              <li><a class="footer__link text-text-muted" href="#">Delivery Details</a></li>
+              <li><a class="footer__link text-text-muted" href="#">Terms &amp; Conditions</a></li>
+              <li><a class="footer__link text-text-muted" href="#">Privacy Policy</a></li>
             </ul>
           </div>
 
           <div class="footer__column">
-            <h3 class="footer__heading">FAQ</h3>
-            <ul class="footer__list">
-              <li><a class="footer__link" href="#">Account</a></li>
-              <li><a class="footer__link" href="#">Manage Deliveries</a></li>
-              <li><a class="footer__link" href="#">Orders</a></li>
-              <li><a class="footer__link" href="#">Payments</a></li>
+            <h3 class="footer__heading mb-md text-body font-medium tracking-wide uppercase">FAQ</h3>
+            <ul class="footer__list flex flex-col gap-md">
+              <li><a class="footer__link text-text-muted" href="#">Account</a></li>
+              <li><a class="footer__link text-text-muted" href="#">Manage Deliveries</a></li>
+              <li><a class="footer__link text-text-muted" href="#">Orders</a></li>
+              <li><a class="footer__link text-text-muted" href="#">Payments</a></li>
             </ul>
           </div>
 
           <div class="footer__column">
-            <h3 class="footer__heading">Resources</h3>
-            <ul class="footer__list">
-              <li><a class="footer__link" href="#">Free eBooks</a></li>
-              <li><a class="footer__link" href="#">Development Tutorial</a></li>
-              <li><a class="footer__link" href="#">How to - Blog</a></li>
-              <li><a class="footer__link" href="#">Youtube Playlist</a></li>
+            <h3 class="footer__heading mb-md text-body font-medium tracking-wide uppercase">
+              Resources
+            </h3>
+            <ul class="footer__list flex flex-col gap-md">
+              <li><a class="footer__link text-text-muted" href="#">Free eBooks</a></li>
+              <li><a class="footer__link text-text-muted" href="#">Development Tutorial</a></li>
+              <li><a class="footer__link text-text-muted" href="#">How to - Blog</a></li>
+              <li><a class="footer__link text-text-muted" href="#">Youtube Playlist</a></li>
             </ul>
           </div>
         </div>
 
-        <hr class="footer__line" />
+        <hr class="footer__line mt-xl mb-md border-t border-border" />
 
-        <div class="footer__bottom">
-          <p class="footer__copyright">Shop.co © 2000-2023, All Rights Reserved</p>
-          <ul class="footer__payments">
+        <div class="footer__bottom flex justify-between items-center">
+          <p class="footer__copyright text-text-muted text-caption">
+            Shop.co © 2000-2023, All Rights Reserved
+          </p>
+          <ul class="footer__payments flex gap-md">
             <li><img src="/images/footer/visa.svg" alt="Visa" /></li>
             <li><img src="/images/footer/mastercard.svg" alt="Mastercard" /></li>
             <li><img src="/images/footer/paypal.svg" alt="PayPal" /></li>
