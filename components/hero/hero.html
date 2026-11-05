@@ -4,42 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>hero</title>
-    <link rel="stylesheet" href="/css/tokens.css" />
-    <link rel="stylesheet" href="/css/page.css" />
-    <link rel="stylesheet" href="/components/hero/hero.css" />
+    <script type="module" src="/js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <section class="hero">
-      <div class="hero__visual">
+    <section class="hero grid bg-hero">
+      <div
+        class="hero__visual col-start-1 row-start-1 relative justify-self-center w-full max-w-[1440px]"
+      >
         <img
-          class="hero__photo"
+          class="hero__photo w-full"
           src="/images/hero/photo.jpg"
           alt="Man and woman in stylish jackets and glasses"
         />
-        <img class="hero__star hero__star--big" src="/images/hero/star.svg" alt="" />
-        <img class="hero__star hero__star--small" src="/images/hero/star.svg" alt="" />
+        <img
+          class="hero__star hero__star--big absolute top-[13%] right-[6%] w-[100px]"
+          src="/images/hero/star.svg"
+          alt=""
+        />
+        <img
+          class="hero__star hero__star--small absolute top-[45%] left-[52%] w-[54px]"
+          src="/images/hero/star.svg"
+          alt=""
+        />
       </div>
 
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <h1 class="hero__title">Find clothes that matches your style</h1>
-          <p class="hero__text">
+      <div
+        class="max-w-page mx-auto px-gutter hero__inner col-start-1 row-start-1 z-10 flex items-center w-full"
+      >
+        <div class="hero__content max-w-[640px] py-xl">
+          <h1 class="hero__title mb-md font-heading text-display leading-none uppercase">
+            Find clothes that matches your style
+          </h1>
+          <p class="hero__text max-w-[36em] mb-lg text-text-muted">
             Browse through our diverse range of meticulously crafted garments, designed to bring out
             your individuality and cater to your sense of style.
           </p>
-          <a class="hero__button" href="/category.html">Shop Now</a>
-          <ul class="hero__stats">
-            <li class="hero__stat">
-              <span class="hero__stat-number">200+</span>
-              <span class="hero__stat-label">International Brands</span>
+          <a
+            class="hero__button inline-block py-xs px-xl rounded-pill bg-bg-dark text-on-dark"
+            href="/category.html"
+          >
+            Shop Now
+          </a>
+          <ul class="hero__stats flex gap-md mt-lg">
+            <li class="hero__stat not-first:pl-md not-first:border-l not-first:border-border">
+              <span class="hero__stat-number block text-subtitle font-bold leading-none">200+</span>
+              <span class="hero__stat-label block text-caption text-text-muted"
+                >International Brands</span
+              >
             </li>
-            <li class="hero__stat">
-              <span class="hero__stat-number">2,000+</span>
-              <span class="hero__stat-label">High-Quality Products</span>
+            <li class="hero__stat not-first:pl-md not-first:border-l not-first:border-border">
+              <span class="hero__stat-number block text-subtitle font-bold leading-none"
+                >2,000+</span
+              >
+              <span class="hero__stat-label block text-caption text-text-muted"
+                >High-Quality Products</span
+              >
             </li>
-            <li class="hero__stat">
-              <span class="hero__stat-number">30,000+</span>
-              <span class="hero__stat-label">Happy Customers</span>
+            <li class="hero__stat not-first:pl-md not-first:border-l not-first:border-border">
+              <span class="hero__stat-number block text-subtitle font-bold leading-none"
+                >30,000+</span
+              >
+              <span class="hero__stat-label block text-caption text-text-muted"
+                >Happy Customers</span
+              >
             </li>
           </ul>
         </div>

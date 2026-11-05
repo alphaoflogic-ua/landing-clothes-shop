@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>product-list</title>
-    <link rel="stylesheet" href="/css/tokens.css" />
-    <link rel="stylesheet" href="/components/product-list/product-list.css" />
+    <script type="module" src="/js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <section class="product-list">
-      <h2 class="product-list__heading">New Arrivals</h2>
-      <div class="product-list__grid">
+    <section class="product-list py-xl">
+      <h2
+        class="product-list__heading mb-2xl font-heading text-title leading-none text-center uppercase"
+      >
+        New Arrivals
+      </h2>
+      <div class="product-list__grid grid grid-cols-4 gap-md">
         <div
           data-include="product-card"
           data-title="T-shirt with Tape Details"
@@ -44,7 +48,12 @@
           data-discount="30"
         ></div>
       </div>
-      <a class="product-list__link" href="/category.html">View All</a>
+      <a
+        class="product-list__link block w-fit mx-auto mt-lg py-xs px-2xl border border-border rounded-pill text-text"
+        href="/category.html"
+      >
+        View All
+      </a>
     </section>
 
     <script type="module">

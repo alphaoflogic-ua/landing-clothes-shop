@@ -4,25 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>product-card</title>
-    <link rel="stylesheet" href="/css/tokens.css" />
-    <link rel="stylesheet" href="/components/product-card/product-card.css" />
+    <script type="module" src="/js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <a class="product-card" href="/product.html">
+    <a class="product-card flex flex-col gap-sm" href="/product.html">
       <img
-        class="product-card__image"
+        class="product-card__image w-full object-cover rounded-md bg-product-bg aspect-square"
         src="/images/product-card/jeans.png"
         alt="Skinny Fit Jeans"
       />
-      <h3 class="product-card__title">Skinny Fit Jeans</h3>
-      <div class="product-card__rating">
-        <span class="product-card__stars"></span>
+      <h3 class="product-card__title mb-sm text-product-title">Skinny Fit Jeans</h3>
+      <div class="product-card__rating flex items-center gap-sm text-caption">
+        <span
+          class="product-card__stars h-icon-md w-[calc(var(--spacing-icon-md)*5)] [--rating:3.5] bg-[linear-gradient(90deg,var(--color-rating)_calc(var(--rating)/5*100%),var(--color-border)_0)] mask-[url('/images/product-card/star.svg')] mask-repeat-x mask-size-[var(--spacing-icon-md)_var(--spacing-icon-md)]"
+        ></span>
         <span class="product-card__rating-value">3.5/5</span>
       </div>
-      <div class="product-card__prices">
+      <div class="product-card__prices flex items-center gap-sm text-price font-bold">
         <span class="product-card__price">$240</span>
-        <del class="product-card__old-price">$260</del>
-        <span class="product-card__discount">-20%</span>
+        <del class="product-card__old-price text-text-muted">$260</del>
+        <span
+          class="product-card__discount py-sm px-xs rounded-pill bg-discount-bg text-discount text-caption font-medium"
+        >
+          -20%
+        </span>
       </div>
     </a>
 

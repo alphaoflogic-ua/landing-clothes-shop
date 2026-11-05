@@ -3,23 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>newsletter</title>
-    <link rel="stylesheet" href="/css/tokens.css" />
-    <link rel="stylesheet" href="/components/newsletter/newsletter.css" />
+    <script type="module" src="/js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <section class="newsletter">
-      <h2 class="newsletter__title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+    <section
+      class="newsletter flex justify-between items-center py-lg px-2xl rounded-md bg-bg-dark"
+    >
+      <h2 class="newsletter__title font-heading text-subtitle text-on-dark">
+        STAY UPTO DATE ABOUT OUR LATEST OFFERS
+      </h2>
 
-      <form class="newsletter__form">
+      <form class="newsletter__form flex flex-col gap-xs w-form shrink-0">
         <input
-          class="newsletter__input"
+          class="newsletter__input py-xs pr-md pl-[calc(var(--spacing-md)+var(--spacing-icon)+var(--spacing-sm))] rounded-pill bg-bg bg-[url('/images/newsletter/mail.svg')] bg-no-repeat bg-position-[var(--spacing-md)_center] bg-size-[var(--spacing-icon)] text-text placeholder:text-text-muted"
           type="email"
           name="email"
           placeholder="Enter your email address"
           aria-label="Email address"
         />
-        <button class="newsletter__button" type="submit">Subscribe to Newsletter</button>
+        <button
+          class="newsletter__button py-xs px-md rounded-pill bg-bg text-text cursor-pointer hover:opacity-85"
+          type="submit"
+        >
+          Subscribe to Newsletter
+        </button>
       </form>
     </section>
 
