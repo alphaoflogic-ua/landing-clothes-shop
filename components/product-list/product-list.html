@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>product-list</title>
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <script type="module" src="/js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <section class="product-list py-xl">
+      <h2
+        class="product-list__heading mb-2xl font-heading text-title leading-none text-center uppercase"
+      >
+        New Arrivals
+      </h2>
+      <div class="product-list__grid grid grid-cols-4 gap-md">
+        <div
+          data-include="product-card"
+          data-title="T-shirt with Tape Details"
+          data-photo="/images/product-card/tshirt-tape.png"
+          data-price="120"
+          data-rating="4"
+        ></div>
+        <div
+          data-include="product-card"
+          data-title="Skinny Fit Jeans"
+          data-photo="/images/product-card/jeans.png"
+          data-price="240"
+          data-rating="3.5"
+          data-old-price="260"
+          data-discount="20"
+        ></div>
+        <div
+          data-include="product-card"
+          data-title="Checkered Shirt"
+          data-photo="/images/product-card/checkered-shirt.png"
+          data-price="180"
+          data-rating="4.5"
+        ></div>
+        <div
+          data-include="product-card"
+          data-title="Sleeve Striped T-shirt"
+          data-photo="/images/product-card/sleeve-striped-tshirt.png"
+          data-price="130"
+          data-rating="4.5"
+          data-old-price="160"
+          data-discount="30"
+        ></div>
+      </div>
+      <a
+        class="product-list__link block w-fit mx-auto mt-lg py-xs px-2xl border border-border rounded-pill text-text"
+        href="/category.html"
+      >
+        View All
+      </a>
+    </section>
+
+    <script type="module">
+      import '/js/include.js';
+      import { init } from './product-list.js';
+      init(document);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--page-padding);
+}
+
+.page__newsletter {
+  position: relative;
+  margin-bottom: calc(var(--newsletter-overlap) * -1);
+}
+
+.page__divider {
+  margin: 0;
+  border: 0;
+  border-top: var(--border-width) solid var(--color-border);
+}
