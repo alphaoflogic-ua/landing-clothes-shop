@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Header</title>
     <link rel="stylesheet" href="/css/tokens.css" />
-    <link rel="stylesheet" href="/components/header/header.css" />
+    <script type="module" src="/js/theme.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
-    <header class="header">
-      <a class="header__logo" href="/index.html">SHOP.CO</a>
+    <header class="header flex items-center gap-lg py-6">
+      <a class="header__logo font-heading text-logo text-text" href="/index.html">SHOP.CO</a>
 
       <nav class="header__nav">
-        <ul class="header__list">
+        <ul class="header__list flex gap-md">
           <li class="header__item">
-            <a class="header__link" href="/category.html">
+            <a class="header__link flex items-center gap-sm text-text" href="/category.html">
               Shop
               <img
                 class="header__chevron"
@@ -24,33 +25,39 @@
             </a>
           </li>
           <li class="header__item">
-            <a class="header__link" href="/category.html">On Sale</a>
+            <a class="header__link flex items-center gap-sm text-text" href="/category.html"
+              >On Sale</a
+            >
           </li>
           <li class="header__item">
-            <a class="header__link" href="/category.html">New Arrivals</a>
+            <a class="header__link flex items-center gap-sm text-text" href="/category.html"
+              >New Arrivals</a
+            >
           </li>
           <li class="header__item">
-            <a class="header__link" href="/category.html">Brands</a>
+            <a class="header__link flex items-center gap-sm text-text" href="/category.html"
+              >Brands</a
+            >
           </li>
         </ul>
       </nav>
 
-      <div class="header__search">
-        <img class="header__icon" src="/images/header/search.svg" alt="Пошук" />
+      <div class="header__search flex items-center flex-1 bg-surface rounded-pill py-sm px-md">
+        <img class="header__icon size-icon" src="/images/header/search.svg" alt="Пошук" />
         <input
-          class="header__input"
+          class="header__input flex-1 placeholder:text-text-muted"
           type="search"
           placeholder="Search for products..."
           aria-label="Пошук товарів"
         />
       </div>
 
-      <div class="header__actions">
-        <a class="header__action" href="/cart.html">
-          <img class="header__icon" src="/images/header/cart.svg" alt="Кошик" />
+      <div class="header__actions flex items-center gap-md">
+        <a class="header__action cursor-pointer" href="/cart.html">
+          <img class="header__icon size-icon" src="/images/header/cart.svg" alt="Кошик" />
         </a>
-        <button class="header__action" type="button">
-          <img class="header__icon" src="/images/header/profile.svg" alt="Профіль" />
+        <button class="header__action cursor-pointer" type="button">
+          <img class="header__icon size-icon" src="/images/header/profile.svg" alt="Профіль" />
         </button>
       </div>
     </header>
