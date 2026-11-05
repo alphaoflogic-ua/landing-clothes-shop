@@ -9,14 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Homepage</title>
     <link rel="stylesheet" href="/css/tokens.css" />
-    <link rel="stylesheet" href="/css/page.css" />
     <script type="module" src="/js/theme.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script type="module" src="/js/include.js"></script>
   </head>
   <body>
     <div data-include="promo-bar"></div>
-    <div class="container">
+    <div class="max-w-page mx-auto px-gutter">
       <div data-include="header"></div>
     </div>
     <div data-include="hero"></div>
@@ -85,7 +84,7 @@
         data-rating="4.5"
       ></div>
     </main>
-    <div class="container page__newsletter">
+    <div class="max-w-page mx-auto px-gutter relative -mb-newsletter-overlap">
       <div data-include="newsletter"></div>
     </div>
     <div data-include="footer"></div>
